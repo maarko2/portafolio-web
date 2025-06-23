@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+---
+
+<Layout>
+    <Header />
+    
+    <main class="pt-16 min-h-screen" style="background-color: #131a29;">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+            <!-- Botón volver -->
+            <div class="mb-8">
+                <a href="/#experiencia" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Volver a Experiencia
+                </a>
+            </div>
+
+            <!-- Contenido detallado -->
+            <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                <h1 class="text-4xl font-bold text-white mb-6">
+                    Soporte en Base de Datos
+                </h1>
+                
+                <img src="/public/images/experience/walmart-cl.png" alt="Walmart Chile" 
+                     class="w-full h-96 object-cover rounded-lg mb-8 shadow-lg">
+                
+                <div class="space-y-6 text-gray-300">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Empresa</h3>
+                            <p>Walmart Chile</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Duración</h3>
+                            <p>1 de Febrero del 2024 - 7 de Marzo del 2024</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Descripción del Trabajo</h3>
+                        <p class="leading-relaxed">
+                            Trabajo de soporte en la base de datos de Walmart durante mi Práctica Temprana, 
+                            realizando tareas de revisión a la base de datos y mantenimiento a dispositivos de la empresa.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Responsabilidades</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Revisión de Bases de Datos</li>
+                            <li>Mantención de dispositivos (Computadoras, Notebooks, Impresoras, etc.)</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Tecnologías Utilizadas</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-blue-900 text-blue-200 text-sm font-medium rounded-full">MySQL</span>
+                            <span class="px-4 py-2 bg-green-900 text-green-200 text-sm font-medium rounded-full">HTML</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
