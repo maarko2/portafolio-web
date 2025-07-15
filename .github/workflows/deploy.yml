@@ -38,7 +38,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME file
-        run: echo "MarcoBurgos.me" > ./dist/CNAME
+        run: echo "marcoburgos.me" > ./dist/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
